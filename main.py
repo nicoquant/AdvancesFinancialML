@@ -13,12 +13,14 @@ if __name__ == '__main__':
     plt.figure(1)
     plt.plot(correl.values())
     plt.xlabel("Weight of differentiation")
-    plt.ylabel("Correlation between Xt and Xt - d*Xt-1")
+    plt.ylabel("Correlation between Xt and Xt - w*Xt-1")
     plt.title("Evolution of correlation")
     plt.show()
 
     plt.figure(2)
     plt.plot(ffd)
     plt.show()
+
+
 
 
